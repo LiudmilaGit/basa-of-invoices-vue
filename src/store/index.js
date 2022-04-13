@@ -10,17 +10,6 @@ export default createStore({
     currentInvoiceArray: null,
     editInvoice: null,
   },
-  getters: {
-    invoiceModal(state) {
-      return state.invoiceModal;
-    },
-    modalActive(state) {
-      return state.modalActive;
-    },
-    invoicesLoaded(state) {
-      return state.invoicesLoaded;
-    },
-  },
   mutations: {
     toggleInvoice(state) {
       state.invoiceModal = !state.invoiceModal;
